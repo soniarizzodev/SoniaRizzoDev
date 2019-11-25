@@ -6,17 +6,21 @@
     <title>Sonia Rizzo Dev - Online Portfolio and a few other things</title>
     <link rel="stylesheet" type="text/css" href="/static/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap_custom.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="{{url_for('home')}}">Sonia Rizzo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
                 <a class="nav-item nav-link" href="#">About</a>
                 <a class="nav-item nav-link" href="#">Portfolio</a>
             </div>
