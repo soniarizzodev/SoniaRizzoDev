@@ -5,7 +5,7 @@ This script runs the SoniaRizzoDev application using a development server.
 from os import environ
 from webapp import app
 
-def start():
+def start(one, two):
     HOST = environ.get('SERVER_HOST', 'localhost')
     try:
         PORT = int(environ.get('SERVER_PORT', '5555'))
