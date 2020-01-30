@@ -1,5 +1,38 @@
+:root{
+    --dark-color: #283140;
+    --accent-color:#ff5f84
+}
+
 body{
     font-family: 'Barlow', sans-serif;
     font-size:14pt;
     font-weight:200 !important;
+}
+
+.welcome{
+    padding:20px 0;
+    font-size:2rem;
+}
+
+.welcome a{
+    background-color:var(--accent-color);
+    color:white !important;
+    padding:0 5px 2px 5px;
+    border-radius:1px;
+    font-weight:300;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    -webkit-transition: font-size .15s ease-out;
+    -moz-transition: font-size .15s ease-out;
+    -o-transition: font-size .15s ease-out;
+    transition: font-size .15s ease-out;
+}
+
+.welcome a:hover{
+    text-decoration:none;
+    font-size:1.7rem;
+}
+
+.super-big-text{
+    font-size:4rem;
 }
