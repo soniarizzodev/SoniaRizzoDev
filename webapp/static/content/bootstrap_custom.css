@@ -131,7 +131,7 @@ h1{
 }
 
 .badge-primary{
-    background-color:var(--accent-color);
+    background-color:#48d4b7;
 }
 
 .badge{
@@ -158,6 +158,14 @@ a.badge-primary:hover, a.badge-primary:active, a.badge-primary:focus{
 .btn-primary{
     background-color:var(--accent-color) !important;
     border:none;
+    -webkit-transition: background-color .15s ease-out;
+    -moz-transition: background-color .15s ease-out;
+    -o-transition: background-color .15s ease-out;
+    transition: background-color .15s ease-out;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color:#ff7797 !important;
 }
 
 @media (min-width:993px){

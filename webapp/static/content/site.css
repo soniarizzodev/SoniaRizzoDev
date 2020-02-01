@@ -1,6 +1,6 @@
 body{
     font-family: 'Barlow', sans-serif;
-    font-size:14pt;
+    font-size:16pt;
     font-weight:300 !important;
 }
 
@@ -39,7 +39,7 @@ main{
 .portfolio-item{
     cursor:pointer;
     line-height:20pt;
-    padding:30px 0;
+    padding:50px 0;
 }
 
 .portfolio-item .title{
@@ -50,13 +50,13 @@ main{
 
 .portfolio-item .subtitle{
     font-size:0.8em;
-    color:var(--accent-color);
-    font-weight:500;
+    color:var(--accent-color) !important;
+    font-weight:500;   
 }
 
 .portfolio-item .img-wrapper{
     display:block;
-    margin-top:10px;
+    margin:30px 0;
     box-shadow: 1px 1px 4px 1px rgba(200, 200, 200, .4);
     border:1px solid rgb(227, 227, 227);
     -webkit-transition: box-shadow .15s ease-out;
@@ -67,6 +67,28 @@ main{
 
 .portfolio-item .img-wrapper:hover{
     box-shadow: 0px 0px 4px 3px rgba(255, 95, 132, 0.4);
+}
+
+.portfolio-item .img-wrapper.video{
+    position:relative;
+}
+
+.portfolio-item .img-wrapper.video:before{    
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f01d";
+    font-family: FontAwesome;
+    font-size: 100px;
+    color: var(--accent-color);
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);      
+}
+
+.portfolio-item .img-wrapper.video:hover:before{
+    color: #ff7797;
 }
 
 .portfolio-item img{
@@ -83,6 +105,11 @@ main{
 
 .portfolio-item .look{
     text-align:right;
+}
+
+video{
+    height:100%;
+    width:100%;
 }
 
 .super-big-text{
