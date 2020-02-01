@@ -38,10 +38,20 @@ def about():
 
 @app.route('/portfolio')
 def portfolio():
-    """Renders the about page."""
+    """Renders the portfolio page."""
     return render_template(
         'portfolio.html',
         title='Portfolio',
+        year=datetime.now().year,
+        message='Your application description page.'
+    )
+
+@app.route('/privacy')
+def privacy():
+    """Renders the privacy page."""
+    return render_template(
+        'privacy.html',
+        title='Privacy',
         year=datetime.now().year,
         message='Your application description page.'
     )

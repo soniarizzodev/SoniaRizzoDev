@@ -118,10 +118,15 @@ footer{
     display:flex;
     flex-direction:row;
     align-items:center;
+    justify-content:space-between;
 }
 
 footer p{
     margin:0;
+}
+
+footer .privacy{
+    font-size:0.7em;
 }
 
 h1{
@@ -175,11 +180,6 @@ a.badge-primary:hover, a.badge-primary:active, a.badge-primary:focus{
 }
 
 @media (max-width:992px){
-    main{
-        position:relative;
-        z-index:3;
-    }
-
     .menu-toggle{
         display:block;
     }    

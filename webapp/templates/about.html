@@ -2,6 +2,28 @@
 
 {% block content %}
 
-<h1>About Me</h1>
+<section class="row padding-top-30">
+    <div class="col-12">
+        <h1 class="text-center">About Me</h1>
+    </div>
+</section>
+<section class="row about">
+    <div class="col-12">
+        <p><span class="super-big-text">Hi!</span> You probably already read something about myself on the Home Page. Well, my name is <strong>Sonia Rizzo</strong>. I'm a Software Developer since 2012, 
+        when I graduated from a Computer Science and Programming High School in Italy.</p>
+        <p>I was born and raised in the sunny island of <strong>Sicily</strong>, but I also lived in <strong>Romania</strong> and in the <strong>UK</strong>. I can speak Romanian and English, 
+        being pretty fluent in both languages additionally to my mother tongue, Italian.</p>
+        <p>I've worked with <strong>C#</strong>, <strong>javascript</strong>, <strong>HTML</strong> and <strong>CSS</strong> for the majority of my career. Last year though I started a collaboration with a startup that required me to 
+        switch to <strong>Python</strong>, which I liked very much!</p>
+        <p>Other than coding I dedicate my time to some other things I'm very passionate about: <strong>volunteering</strong> (that's how I learned Romanian!), 
+        working on my <strong>Alfa Romeo</strong> and detailing it (I'm a MASSIVE car enthusiast), <strong>exercising</strong>, playing some <strong>music</strong> on the guitar or the piano and having 
+        fun with my <strong>nieces and nephews</strong> (I'm the cool aunt).</p>
+        <p>
+            I'm a supporter of <strong>work/life balance</strong> and have been <strong>working remotely</strong> for pretty much my entire career. I also deeply believe
+            that being a <strong>good, caring and helping</strong> person really goes a long way, inside the work environment too!
+        </p>
+        <p>You can <a href="{{url_for('contact')}}">find me</a> on a few social platforms or drop me an email. I would love to chat :)</p>
+    </div>
+</section>
 
 {% endblock %}

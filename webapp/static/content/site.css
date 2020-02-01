@@ -8,6 +8,18 @@ main{
     margin-top:var(--navbar-height);
 }
 
+strong{
+    font-weight:500;
+}
+
+a{
+    color:var(--accent-color)
+}
+
+a:hover{
+    color:var(--accent-color)
+}
+
 .welcome{
     padding:40px 0;
     font-size:2rem;
@@ -17,7 +29,7 @@ main{
     margin-bottom:40px;
 }
 
-.welcome a{
+.welcome a, .about a{
     background-color:var(--accent-color);
     color:white !important;
     padding:0 5px 2px 5px;
@@ -31,9 +43,35 @@ main{
     transition: font-size .15s ease-out;
 }
 
-.welcome a:hover{
+.welcome a:hover, .about a:hover{
     text-decoration:none;
     font-size:1.7rem;
+}
+
+.about, .contacts{
+    padding-bottom:60px;
+}
+
+.about p{
+    margin-bottom:40px;
+}
+
+.contacts{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.contacts a{    
+    font-size:1.7rem;
+    padding:10px;
+}
+
+.contacts a i{
+    position:relative;
+    top:4px;
+    margin:0 10px;
+    font-size:1.2em;
 }
 
 .portfolio-item{
@@ -128,4 +166,8 @@ video{
 
 .padding-top-30{
     padding-top:30px;
+}
+
+.padding-bottom-60{
+    padding-bottom:60px;
 }
