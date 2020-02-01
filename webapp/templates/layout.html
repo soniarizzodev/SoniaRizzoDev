@@ -13,26 +13,30 @@
 </head>
 
 <body>
-    <nav class=" navbar-expand-lg">
-        <div class="navbar fixed-top ">
-            <a class="navbar-brand" href="{{url_for('home')}}">Sonia Rizzo</a>
-            <div class="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="navbar-collapse collapse" id="navbar">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
-                    <a class="nav-item nav-link" href="{{url_for('about')}}">About</a>
-                    <a class="nav-item nav-link" href="{{url_for('portfolio')}}">Portfolio</a>
-                    <a class="nav-item nav-link" href="{{url_for('contact')}}">Contact Me</a>
-                </div>
+    <nav class="navbar navbar-expand-lg fixed-top">        
+        <a class="navbar-brand" href="{{url_for('home')}}">Sonia Rizzo</a>
+        <div class="menu-toggle" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>     
+        <div class="navbar-collapse collapse" id="navbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
+                <a class="nav-item nav-link" href="{{url_for('about')}}">About</a>
+                <a class="nav-item nav-link" href="{{url_for('portfolio')}}">Portfolio</a>
+                <a class="nav-item nav-link" href="{{url_for('contact')}}">Contact Me</a>
             </div>
         </div>
-        
-        
+    </nav>
+    <nav class="mobile-nav" id="mobile-nav">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{url_for('home')}}">Home</a>
+            <a class="nav-item nav-link" href="{{url_for('about')}}">About</a>
+            <a class="nav-item nav-link" href="{{url_for('portfolio')}}">Portfolio</a>
+            <a class="nav-item nav-link" href="{{url_for('contact')}}">Contact Me</a>
+        </div>
     </nav>
 
     <main class="container body-content full-height">
@@ -49,7 +53,7 @@
     <script type="text/javascript">
         $('.menu-toggle').click(function () {
             $(this).toggleClass('open');
-            $('#navbar').toggleClass('open')          
+            $('#mobile-nav').toggleClass('open')          
         });
     </script>
     {% block scripts %}{% endblock %}

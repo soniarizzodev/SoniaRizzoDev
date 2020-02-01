@@ -1,7 +1,7 @@
 body{
     font-family: 'Barlow', sans-serif;
     font-size:14pt;
-    font-weight:200 !important;
+    font-weight:300 !important;
 }
 
 main{
@@ -38,16 +38,20 @@ main{
 
 .portfolio-item{
     cursor:pointer;
-    line-height:15pt;
+    line-height:20pt;
+    padding:30px 0;
 }
 
 .portfolio-item .title{
     display:block;
     font-weight:300;
+    font-size:1.8rem;
 }
 
 .portfolio-item .subtitle{
-    font-size:0.7em;
+    font-size:0.8em;
+    color:var(--accent-color);
+    font-weight:500;
 }
 
 .portfolio-item .img-wrapper{
@@ -67,6 +71,18 @@ main{
 
 .portfolio-item img{
     max-width:100%;
+}
+
+.portfolio-item .description ul{
+    list-style-type:circle;
+}
+
+.portfolio-item .description ul li{
+    margin:20px 0;
+}
+
+.portfolio-item .look{
+    text-align:right;
 }
 
 .super-big-text{
