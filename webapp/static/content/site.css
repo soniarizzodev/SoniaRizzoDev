@@ -64,11 +64,7 @@ a:hover{
 
 .contacts a{    
     font-size:1.7rem;
-    padding:10px;
-}
-
-.contacts .smaller{
-    font-size:1.1em;
+    padding:10px 0;
 }
 
 .contacts a i{
@@ -174,4 +170,14 @@ video{
 
 .padding-bottom-60{
     padding-bottom:60px;
+}
+
+@media (max-width:600px){
+    .contacts .smaller{
+        font-size:0.9em;
+    }
+
+    .contacts a.smaller i{        
+        top:2px;        
+    }
 }
