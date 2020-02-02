@@ -67,6 +67,10 @@ a:hover{
     padding:10px;
 }
 
+.contacts .smaller{
+    font-size:1.1em;
+}
+
 .contacts a i{
     position:relative;
     top:4px;
