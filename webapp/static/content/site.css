@@ -35,7 +35,7 @@ a:hover{
     padding:0 5px 2px 5px;
     border-radius:1px;
     font-weight:300;
-    font-size:1.5rem;
+    font-size:0.8em;
     text-transform:uppercase;
     -webkit-transition: font-size .15s ease-out;
     -moz-transition: font-size .15s ease-out;
@@ -45,7 +45,7 @@ a:hover{
 
 .welcome a:hover, .about a:hover{
     text-decoration:none;
-    font-size:1.7rem;
+    font-size:1em;
 }
 
 .about, .contacts{
@@ -158,6 +158,15 @@ a:hover{
     display:block;
     margin:15px 0;
     word-wrap:break-word;
+}
+
+.ps{
+    font-size:0.6em;
+    margin-top:80px;
+}
+
+.ps a{
+    padding-top:1px;
 }
 
 video{
