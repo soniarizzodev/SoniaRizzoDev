@@ -145,6 +145,21 @@ a:hover{
     text-align:right;
 }
 
+.other-works{
+    padding-bottom:60px;
+}
+
+.other-works h3{
+    font-weight:300;
+    text-transform:uppercase;
+}
+
+.other-works a{
+    display:block;
+    margin:15px 0;
+    word-wrap:break-word;
+}
+
 video{
     height:100%;
     width:100%;
@@ -170,6 +185,10 @@ video{
 
 .padding-bottom-60{
     padding-bottom:60px;
+}
+
+.hidden{
+    display:none;
 }
 
 @media (max-width:600px){
