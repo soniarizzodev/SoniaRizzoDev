@@ -3,7 +3,7 @@ $('.modal').on('hidden.bs.modal', function () {
 });
 
 $('#console_video_modal').on('shown.bs.modal', function () {
-    $('#console').get(0).play();
+    $('#console_front').get(0).play();
 });
 
 $('#gs_video_modal').on('shown.bs.modal', function () {

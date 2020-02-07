@@ -173,6 +173,18 @@ a.badge-primary:hover, a.badge-primary:active, a.badge-primary:focus{
     background-color:#ff7797 !important;
 }
 
+.modal-body{
+    padding-top:40px;
+}
+
+.modal-body h4{
+    font-weight:400;
+}
+
+.modal-body video{
+    margin-bottom:60px;
+}
+
 @media (min-width:993px){
     .navbar-collapse{
         justify-content:flex-end;
