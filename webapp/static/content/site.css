@@ -179,30 +179,24 @@ a.bold{
     background-color:#3e4c64;
     color:white;
     list-style-type:none;
-    padding-left:2%;
-    padding-right:2%;
+    padding-left:5%;
+    padding-right:5%;
     padding-top:12px;
     padding-bottom:12px;
 }
 
-.todo-container ul li::before {
-  font-family: Arial, Helvetica, sans-serif !important;
-  content: "\1F785";  /* Add content: \25EF is the CSS Code/unicode for a circle */
-  color: var(--accent-color); /* Change the color */
-  font-size:1rem;
-  display: inline-block; /* Needed to add space between the bullet and the text */
-  margin-right:10px;
-  margin-left: -1em; /* Also needed for space (tweak if needed) */
-  margin-top:2px;
-  
-}
-
 .todo-container ul li{
-    padding:12px;
-    margin-left:1em;
+    padding:12px 0;   
     display:flex;
     flex-direction:row;
     align-items:center;
+}
+
+.todo-container ul li i{
+  color: var(--accent-color); /* Change the color */
+  font-size:0.9rem;
+  margin-right:12px;
+  margin-top:2px;
 }
 
 video{
