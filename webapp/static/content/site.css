@@ -29,7 +29,7 @@ a:hover{
     margin-bottom:40px;
 }
 
-.welcome a, .about a{
+a.bold{
     background-color:var(--accent-color);
     color:white !important;
     padding:0 5px 2px 5px;
@@ -167,6 +167,38 @@ a:hover{
 
 .ps a{
     padding-top:1px;
+}
+
+.todo-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;    
+}
+
+.todo-container ul{
+    background-color:#3e4c64;
+    color:white;
+    list-style-type:none;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.todo-container ul li::before {
+  content: "\1F785";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--accent-color); /* Change the color */
+  font-size:1rem;
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1.5em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-top:2px;
+  
+}
+
+.todo-container ul li{
+    margin:20px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
 }
 
 video{

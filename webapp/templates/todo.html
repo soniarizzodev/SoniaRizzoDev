@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<section class="row padding-top-30">
+    <div class="col-12">
+        <h1 class="text-center">My Tech ToDo List</h1>
+    </div>
+</section>
+<section class="row">
+    <div class="col-12">
+        <div class="todo-container">
+            <ul data-bind="foreach:Tasks">
+                <li data-bind="text:$data"></li>
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<section class="row padding-top-30 padding-bottom-60">
+    <div class="col-12">
+        This list is retrieving the tasks from my <a href="https://todoist.com/" target="_blank" rel="noopener">Todoist</a> "<strong>Tech</strong>" project using some nice <a class="bold" href="https://developer.todoist.com/sync/v8/" target="_blank" rel="noopener">Todoist API</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+{{super()}}
+
+<script type="text/javascript" src="../static/scripts/knockout-3.5.1.debug.js"></script>
+<script type="text/javascript" src="../static/scripts/viewmodels/appVM.js"></script>
+<script type="text/javascript">
+    window["app"] = new App();
+    ko.applyBindings(app, document.body);
+    app.getTasks();
+</script>
+
+{% endblock %}

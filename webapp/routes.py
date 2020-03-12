@@ -5,6 +5,7 @@ Routes and views for the flask application.
 from datetime import datetime
 from flask import render_template
 from webapp import app
+from webapp.api.srd_todoist import get_tasks
 
 @app.route('/')
 @app.route('/home')
@@ -55,3 +56,19 @@ def privacy():
         year=datetime.now().year,
         message='Your application description page.'
     )
+
+@app.route('/todo')
+def todo():
+    """Renders the privacy page."""
+    return render_template(
+        'todo.html',
+        title='Tech To Do List',
+        year=datetime.now().year,
+        message='My Tech To Do List Page'
+    )
+
+# WEB APIs
+@app.route('/gettasks')
+def gettasks():
+    """Returns todoist tech project tasks."""
+    return get_tasks()
