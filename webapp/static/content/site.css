@@ -186,7 +186,7 @@ a.bold{
 }
 
 .todo-container ul li::before {
-  font-family: Helvetica,Arial,sans-serif;
+  font-family: Arial, Helvetica, sans-serif !important;
   content: "\1F785";  /* Add content: \25EF is the CSS Code/unicode for a circle */
   color: var(--accent-color); /* Change the color */
   font-size:1rem;
