@@ -186,7 +186,8 @@ a.bold{
 }
 
 .todo-container ul li::before {
-  content: "\25EF";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-family: Helvetica,Arial,sans-serif;
+  content: "\1F785";  /* Add content: \25EF is the CSS Code/unicode for a circle */
   color: var(--accent-color); /* Change the color */
   font-size:1rem;
   display: inline-block; /* Needed to add space between the bullet and the text */
