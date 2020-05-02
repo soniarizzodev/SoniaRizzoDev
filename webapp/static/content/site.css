@@ -230,6 +230,22 @@ video{
     display:none;
 }
 
+blockquote{
+    font-size:1.7rem;
+    font-style:italic;
+    padding:25px;
+    background-color:#3333330d;
+}
+
+blockquote p{
+    margin:0;
+}
+
+blockquote footer{
+    background-color:transparent;
+    justify-content:flex-end;
+}
+
 @media (max-width:600px){
     .contacts .smaller{
         font-size:0.9em;
